@@ -54,11 +54,13 @@
 //     }
 // }
 
+//program to show times table.
 
-n = 10
-let number = (prompt("Enter a number from 1 - 10: "))
+n = 10 //count for loop.
+let number = (prompt("Enter a number from 1 - 10: ")) //asks for user to  enter number
 
+//loop that will iterate 10 times.
 for(let i = 1; i <= n; i++)
 {
-    alert(`${number}x${i}=${number * i}`)
+    alert(`${number}x${i}=${number * i}`) //display  number x i = (example = 2 x 2 = 4)
 }
