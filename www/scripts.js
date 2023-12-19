@@ -56,11 +56,26 @@
 
 //program to show times table.
 
-n = 10 //count for loop.
-let number = (prompt("Enter a number from 1 - 10: ")) //asks for user to  enter number
+// n = 10 //count for loop.
+// let number = (prompt("Enter a number from 1 - 10: ")) //asks for user to  enter number
 
-//loop that will iterate 10 times.
-for(let i = 1; i <= n; i++)
+// //loop that will iterate 10 times.
+// for(let i = 1; i <= n; i++)
+// {
+//     alert(`${number}x${i}=${number * i}`) //display  number x i = (example = 2 x 2 = 4)
+// }
+
+//program to add values of an array.
+
+
+let artest = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] //array
+let arlenght = artest.length //designating array length
+let sum = 0 //counter to store total.
+
+//loop to iterate by the length of array
+for(let i = 0; i < arlenght; i++)
 {
-    alert(`${number}x${i}=${number * i}`) //display  number x i = (example = 2 x 2 = 4)
+    sum += artest[i] //adds calculation to sum variable
 }
+alert(`the sum is ${sum}`) //Displays the total sum of array.
+
