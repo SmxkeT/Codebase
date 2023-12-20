@@ -67,15 +67,31 @@
 
 //program to add values of an array.
 
+// let artest = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] //array
+// let arlenght = artest.length //designating array length
+// let sum = 0 //counter to store total.
 
-let artest = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] //array
-let arlenght = artest.length //designating array length
-let sum = 0 //counter to store total.
+// //loop to iterate by the length of array
+// for(let i = 0; i < arlenght; i++)
+// {
+//     sum += artest[i] //adds calculation to sum variable
+// }
+// alert(`the sum is ${sum}`) //Displays the total sum of array.
 
-//loop to iterate by the length of array
-for(let i = 0; i < arlenght; i++)
+
+//program to calculate average elements of array
+
+let artest2 = [20, 30, 25, 35, -16, 60, -100] //array
+let arlength = artest2.length //array length
+let sum = 0 //calculation storage
+
+//loop to iterate length of array
+for(let i = 0; i < arlength; i++)
 {
-    sum += artest[i] //adds calculation to sum variable
+    sum += artest2[i] //adding array total to sum variable
+    
 }
-alert(`the sum is ${sum}`) //Displays the total sum of array.
+let round = (sum / arlength) //Divide sum of array with length to get average 
+let rounded = round.toFixed(1); // rounds average to 1 decimal place.
 
+alert(`Average value is ${rounded}`) //display average array value.
