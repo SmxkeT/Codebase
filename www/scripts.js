@@ -99,24 +99,69 @@
 
 //program to get min and max of array.
 
-artest = [25, 14, 56, 15, 36, 56, 77, 18, 29, 49] //array
+// artest = [25, 14, 56, 15, 36, 56, 77, 18, 29, 49] //array
 
-max = artest [0] //max and minimum holders
-min = artest [0]
+// max = artest [0] //max and minimum holders
+// min = artest [0]
 
-//loop to iterate and check if array[i] is min or max
-for(i = 0; i < max; i++) 
-{
-    if (max < artest[i]) 
-    {
-        max = artest[i] 
-    }
+// //loop to iterate and check if array[i] is min or max
+// for(i = 0; i < max; i++) 
+// {
+//     if (max < artest[i]) 
+//     {
+//         max = artest[i] 
+//     }
     
-    if (min > artest[i]) 
-    {
-        min = artest[i] 
-    }
+//     if (min > artest[i]) 
+//     {
+//         min = artest[i] 
+//     }
 
+// }
+
+// alert(`maximum value of the array is ${max}, and minimum is ${min}`) //displays the maximum and minimum array values.
+1
+
+//program to check if numbers are the same or not.
+
+// let usernum1 = prompt("enter a number; "); //takes user input
+// let usernum2 = prompt("enter second number; ");
+// let usernum3 = prompt("enter final number; ");
+
+// //checks to see if numbers are equal, different or neither.
+// if (usernum1 === usernum2 && usernum2 === usernum3) 
+// {
+// alert("All numbers are the same");
+// }
+
+// else if (usernum1 !== usernum2 && usernum2 !== usernum3)
+// {
+//     alert("All numbers are different");
+// }
+// else
+// {
+//     alert("Numbers are neither equal nor different")
+// }
+
+
+//program to check if numbers are ascending or descending.
+
+//take user inputs.
+let usernum1 = prompt("Enter a number")
+let usernum2 = prompt("Enter second number; ")
+let usernum3 = prompt("Enter final number; ")
+
+//checking if numbers are ascending, descending or neither.
+if (usernum3 < usernum2 && usernum2 < usernum1)
+{
+    alert("Numbers are descending order")
+}
+else if (usernum1 < usernum2 && usernum2 < usernum3 )
+{
+    alert("Numbers are ascending order")
+}
+else
+{
+    alert("order is neither ascending or descending.")
 }
 
-alert(`maximum value of the array is ${max}, and minimum is ${min}`) //displays the maximum and minimum array values.
