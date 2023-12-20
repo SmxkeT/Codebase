@@ -81,17 +81,42 @@
 
 //program to calculate average elements of array
 
-let artest2 = [20, 30, 25, 35, -16, 60, -100] //array
-let arlength = artest2.length //array length
-let sum = 0 //calculation storage
+// let artest2 = [20, 30, 25, 35, -16, 60, -100] //array
+// let arlength = artest2.length //array length
+// let sum = 0 //calculation storage
 
-//loop to iterate length of array
-for(let i = 0; i < arlength; i++)
-{
-    sum += artest2[i] //adding array total to sum variable
+// //loop to iterate length of array
+// for(let i = 0; i < arlength; i++)
+// {
+//     sum += artest2[i] //adding array total to sum variable
     
-}
-let round = (sum / arlength) //Divide sum of array with length to get average 
-let rounded = round.toFixed(1); // rounds average to 1 decimal place.
+// }
+// let round = (sum / arlength) //Divide sum of array with length to get average 
+// let rounded = round.toFixed(1); // rounds average to 1 decimal place.
 
-alert(`Average value is ${rounded}`) //display average array value.
+// alert(`Average value is ${rounded}`) //display average array value.
+
+
+//program to get min and max of array.
+
+artest = [25, 14, 56, 15, 36, 56, 77, 18, 29, 49] //array
+
+max = artest [0] //max and minimum holders
+min = artest [0]
+
+//loop to iterate and check if array[i] is min or max
+for(i = 0; i < max; i++) 
+{
+    if (max < artest[i]) 
+    {
+        max = artest[i] 
+    }
+    
+    if (min > artest[i]) 
+    {
+        min = artest[i] 
+    }
+
+}
+
+alert(`maximum value of the array is ${max}, and minimum is ${min}`) //displays the maximum and minimum array values.
