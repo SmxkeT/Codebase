@@ -146,22 +146,45 @@
 
 //program to check if numbers are ascending or descending.
 
-//take user inputs.
-let usernum1 = prompt("Enter a number")
-let usernum2 = prompt("Enter second number; ")
-let usernum3 = prompt("Enter final number; ")
+// //take user inputs.
+// let usernum1 = prompt("Enter a number")
+// let usernum2 = prompt("Enter second number; ")
+// let usernum3 = prompt("Enter final number; ")
 
-//checking if numbers are ascending, descending or neither.
-if (usernum3 < usernum2 && usernum2 < usernum1)
+// //checking if numbers are ascending, descending or neither.
+// if (usernum3 < usernum2 && usernum2 < usernum1)
+// {
+//     alert("Numbers are descending order")
+// }
+// else if (usernum1 < usernum2 && usernum2 < usernum3 )
+// {
+//     alert("Numbers are ascending order")
+// }
+// else
+// {
+//     alert("order is neither ascending or descending.")
+// }
+
+
+//Functions
+//functions testing
+
+// function frogchamp() //function to display Froggy
+// {
+//     alert("Froggy")
+// }
+
+// frogchamp()
+
+
+let ar = [10, 2, 3, 4, 7] //array
+
+
+function arcontent() //function to display content of an array.
 {
-    alert("Numbers are descending order")
+alert(`The content of the array is: ${ar}`)
 }
-else if (usernum1 < usernum2 && usernum2 < usernum3 )
-{
-    alert("Numbers are ascending order")
-}
-else
-{
-    alert("order is neither ascending or descending.")
-}
+
+arcontent()
+
 
