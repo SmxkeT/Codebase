@@ -177,14 +177,29 @@
 // frogchamp()
 
 
-let ar = [10, 2, 3, 4, 7] //array
-
+ar = [10, 2, 3, 4, 7] //array
+max = ar [0]
 
 function arcontent() //function to display content of an array.
 {
 alert(`The content of the array is: ${ar}`)
 }
 
+
+//function to display max value of an array
+function armax()
+{
+    for(i = 0; i < max; i++)
+    
+        if (max < ar[i])
+        {
+            max = ar[i]
+        }
+        alert(`The maximum value is ${max}`)
+
+    
+}
+
+//calling functions
 arcontent()
-
-
+armax()
