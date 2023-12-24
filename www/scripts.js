@@ -177,29 +177,48 @@
 // frogchamp()
 
 
-ar = [10, 2, 3, 4, 7] //array
-max = ar [0]
+// ar = [10, 2, 3, 4, 7] //array
+// max = ar [0]
 
-function arcontent() //function to display content of an array.
-{
-alert(`The content of the array is: ${ar}`)
-}
+// function arcontent() //function to display content of an array.
+// {
+// alert(`The content of the array is: ${ar}`)
+// }
 
 
-//function to display max value of an array
-function armax()
-{
-    for(i = 0; i < max; i++)
+// //function to display max value of an array
+// function armax()
+// {
+//     for(i = 0; i < max; i++)
     
-        if (max < ar[i])
-        {
-            max = ar[i]
-        }
-        alert(`The maximum value is ${max}`)
+//         if (max < ar[i])
+//         {
+//             max = ar[i]
+//         }
+//         alert(`The maximum value is ${max}`)
 
     
-}
+// }
 
-//calling functions
-arcontent()
-armax()
+// //calling functions
+// arcontent()
+// armax()
+1
+
+
+//function to display factorial of entered number
+
+function suffering()
+{
+    let usernum = prompt("Enter number")
+    let total = usernum
+
+    if(usernum < 1) // loop to calculate factorial of usernum
+    alert(`Number is 1`)
+    else
+    for (let i = usernum -1; i > 0; i--)
+    total = total * i
+
+alert(`Number is ${total}`)
+}
+suffering()
