@@ -203,22 +203,64 @@
 // //calling functions
 // arcontent()
 // armax()
-1
+
 
 
 //function to display factorial of entered number
 
-function suffering()
+// function suffering()
+// {
+//     let usernum = prompt("Enter number")
+//     let total = usernum
+
+//     if(usernum < 1) // loop to calculate factorial of usernum
+//     alert(`Number is 1`)
+//     else
+//     {
+//     for (let i = usernum -1; i > 0; i--)
+//     total = total * i
+//     }
+
+// alert(`Number is ${total}`)
+// }
+// suffering()
+
+
+//function to check if parameter number is prime or not.
+function sufferingagain(prime)
 {
-    let usernum = prompt("Enter number")
-    let total = usernum
+    let result = true //bool to store result
 
-    if(usernum < 1) // loop to calculate factorial of usernum
-    alert(`Number is 1`)
+    if(prime === 1)
+    {
+        result = false;
+    }
     else
-    for (let i = usernum -1; i > 0; i--)
-    total = total * i
+    {
+        for(let i = 2; i < prime; i++) //loop to check if number is prime or not.
+        if(prime % i === 0)
+        {
+            result = false;
+        }
+    }
 
-alert(`Number is ${total}`)
+    if (result === true) //if true is prime else not
+    {
+        alert(`${prime} is a prime number`)
+    }
+    else if (result === false)
+    {
+        alert(`${prime} is not a prime number`)
+    }
 }
-suffering()
+
+sufferingagain(15) //calling function
+sufferingagain(21)
+sufferingagain(9)
+sufferingagain(2)
+sufferingagain(7)
+sufferingagain(1)
+sufferingagain(3)
+sufferingagain(5)
+sufferingagain(11)
+sufferingagain(13)
