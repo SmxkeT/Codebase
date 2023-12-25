@@ -227,40 +227,41 @@
 
 
 //function to check if parameter number is prime or not.
-function sufferingagain(prime)
-{
-    let result = true //bool to store result
+// function sufferingagain(prime)
+// {
+//     let result = true //bool to store result
 
-    if(prime === 1)
-    {
-        result = false;
-    }
-    else
-    {
-        for(let i = 2; i < prime; i++) //loop to check if number is prime or not.
-        if(prime % i === 0)
-        {
-            result = false;
-        }
-    }
+//     if(prime === 1)
+//     {
+//         result = false;
+//     }
+//     else
+//     {
+//         for(let i = 2; i < prime; i++) //loop to check if number is prime or not.
+//         if(prime % i === 0)
+//         {
+//             result = false;
+//         }
+//     }
 
-    if (result === true) //if true is prime else not
-    {
-        alert(`${prime} is a prime number`)
-    }
-    else if (result === false)
-    {
-        alert(`${prime} is not a prime number`)
-    }
-}
+//     if (result === true) //if true is prime else not
+//     {
+//         alert(`${prime} is a prime number`)
+//     }
+//     else if (result === false)
+//     {
+//         alert(`${prime} is not a prime number`)
+//     }
+// }
 
-sufferingagain(15) //calling function
-sufferingagain(21)
-sufferingagain(9)
-sufferingagain(2)
-sufferingagain(7)
-sufferingagain(1)
-sufferingagain(3)
-sufferingagain(5)
-sufferingagain(11)
-sufferingagain(13)
+// sufferingagain(15) //calling function
+// sufferingagain(21)
+// sufferingagain(9)
+// sufferingagain(2)
+// sufferingagain(7)
+// sufferingagain(1)
+// sufferingagain(3)
+// sufferingagain(5)
+// sufferingagain(11)
+// sufferingagain(13)
+
