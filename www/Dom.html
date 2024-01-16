@@ -9,14 +9,34 @@
           <!-- Javascript insert -->
   <script src="scripts.js"></script>
 
-        <p id ='text'>Vanilla JS DOM</p> 
+        <!-- <p id ='text'>Vanilla JS DOM</p> 
         <script>
             document.getElementById(`text`).innerHTML = "Changed text" //change text to new.
         </script>
         <div>
         <button id="jsstyle"
-        onclick="js_style()">Style</button>
+        onclick="js_style()">Calculate</button>
+        </div> -->
+
+        <!-- Login form + button -->
+
+      <form class="row">
+        <div class="col-6">
+            <label for="inputRadius" class="form-label display-8">Radius</label>
+            <input type="radius" class="form-control" id="inputRadius">
         </div>
+
+      
+        <div class="col-6">
+            <label for="inputPassword" class="form-label display-8">Password</label>
+            <input type="password" class="form-control" id="inputPassword">
+        </div>
+              
+        <div class="d-grid gap-2">
+      <br>
+            <button class="btn btn-success bg-danger" type="button">Login</button>
+        </div>
+    </form>
     </body>
 </html>
 

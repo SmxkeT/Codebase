@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS DOM 2</title>
+    </head>
+    <body>
+        <p>Input radius value and get the volume of a sphere.</p>
+        <br>
+        <form>
+            <label for="Rad-field">Radius</label>
+            <br>
+            <input id="Rad-field" type="text">
+            <br>
+            <label for="Vol-field">Volume</label>
+            <br>
+            <input id="Vol-field" type="text">
+            <br>
+            <input type="submit" id="Subbutton">
+        </form>
+
+        <script> //Pull info from the fields
+            const RadField = document.querySelector("#Rad-field")
+            const VolField = document.querySelector("#Vol-field")
+            const Submitter = document.querySelector("#Subbutton")
+
+            //listener for button
+            Submitter.addEventListener("click", (e) =>
+            {   //submission prevention 
+                e.preventDefault();
+
+                //pulls the radius and does calc for volume.
+                let RD = RadField.value;
+                let vvol = (4 / 3) * Math.PI * (RD ** 3)
+
+                //changes the volume field to the calculation result.
+                VolField.value = vvol.toFixed(2);
+            })
+        </script>
+    </body>
+</html>
