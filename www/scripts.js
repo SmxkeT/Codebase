@@ -265,3 +265,79 @@
 // sufferingagain(11)
 // sufferingagain(13)
 
+//Button referencer\\
+const options = document.querySelectorAll("button")
+//Button referencer\\
+
+//field references\\
+const npc = document.querySelector("#computer")
+const progamer = document.querySelector("#gamer")
+const results = document.querySelector("#winner")
+//field references\\
+
+//participant variables\\
+let ai, gaming
+//participant variables\\
+
+//List to contain actions of game\\
+const actions = [rock, paper, scissors]
+//List to contain actions of game\\
+
+//Loop and listener\\
+for (const buttons of buttons){
+    buttons.addEventListener("click", (_e) =>
+    {
+        ai = options[Math.floor(math.random)]
+        gaming = buttons.value
+        
+        //Results\\
+        npcResult.textcontent = `AI has chosen; ${ai}`
+        gamingResult.textcontent = `You have chosen ${gaming}`
+        //Results\\
+
+        //Program to determine and display winner\\
+        if (gaming === "brick"){
+            if (ai === "paper"){
+                 results.textcontent = "NPC Has Won! | Paper beats rock"
+            }
+            else if (ai === "chop")
+            {
+                results.textContent = "You have won! | Rock beats scissors"
+            }
+            else
+            {
+                results.textContent = "It's a tie, try again!"
+            }
+        }
+        else if (gaming === "paper")
+        {
+        if (ai === "chop")
+        {
+            results.textcontent = "NPC Has Won! | Scissors beat paper"
+        }
+        else if (ai === "brick")
+        {
+            results.textContent = "You have won! | Paper beats rock"
+        }
+        else
+        {
+            results.textcontent = "It's a tie, try again!"
+        }
+        }
+        else if (gaming === "chop")
+        {
+            if (ai === "brick"){
+                results.textcontent = "NPC Has Won! | Rock beats scissors"
+            }
+        }
+        else if(ai === "paper")
+        {
+            results.textcontent = "You have won! | Scissors beats paper"
+        }
+        else
+        {
+            results.textContent = "It's a tie, try again!"
+        }
+        //Program to determine and display winner\\
+    })
+}
