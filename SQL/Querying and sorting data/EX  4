@@ -1,0 +1,27 @@
+Exercise04: Complete an sql that will display a person’s lastname, email, 
+salary and have the sort done according to the person salary in descending order (so highest will be at the top), if two people have the same salary then the secondary 
+sort should be lastname in ascending order.
+
+====================================================================
+                            Main
+====================================================================
+
+select concat(first_name," ", last_name) as 'Full name'
+from employees;
+
+select employee_id, job_id, salary
+from employees
+order by salary DESC;
+
+select employee_id, job_id, salary, last_name
+from employees
+order by salary, last_name;
+
+select last_name, first_name, phone_number
+from employees
+order by last_name, first_name;
+
+select last_name, email, salary
+from employees
+order by salary DESC, last_name;
+
