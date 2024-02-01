@@ -1,0 +1,8 @@
+select e.employee_id, last_name, salary as 'Monthly Salary'
+from employees e;
+
+select employee_id, last_name, salary*12 as 'yearly salary'
+from employees; 
+
+select employee_id, last_name, round(DATEDIFF('2021-11-17',hire_date)/365, 0) AS 'Years of service'
+from employees;
