@@ -35,20 +35,20 @@ factorial() #calling function.
 
 #ex3#
 
-def primecheck(primer):
+def primecheck(primer): #Function to check if number is prime.
     if primer == 1:
-        return f"{primer} is not a prime number."
+        return f"{primer} is not a prime number." #returns to function if num is prime or not prime. 
     
     elif primer == 2:
         return f"{primer} is a prime number"
     
     else:
-        for i in range(2, primer):
+        for i in range(2, primer):        #loop to divide number by 2 to determine if number is prime or not.
             if primer % i == 0:
-                return f"{primer} is not a prime number"
+                return f"{primer} is not a prime number" 
         return f"{primer} is a prime number"
     
-print(primecheck(15))
+print(primecheck(15))    #calling the functions to display wether prime or not.
 print(primecheck (21))
 print(primecheck(9))
 print(primecheck(2))
